@@ -17,8 +17,7 @@ class SplitResponse(BaseModel):
 
 @app.post("/split")
 def split_sentences(req: SplitRequest) -> SplitResponse:
-    lang = req.language if req.language else None
-    sentences = model.split(req.text, lang_code=lang)
+    sentences = model.split(req.text)
     return SplitResponse(sentences=[s.strip() for s in sentences if s.strip()])
 
 
