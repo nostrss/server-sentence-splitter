@@ -3,3 +3,9 @@ __pycache__/
 .env
 venv/
 .venv/
+node_modules/
+.claude/
+.agents/
+package.json
+pnpm-lock.yaml
+skills-lock.json
