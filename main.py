@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from wtpsplit import SaT
+from wtpsplit_lite import SaT
 
 app = FastAPI()
 model = SaT("sat-3l-sm")

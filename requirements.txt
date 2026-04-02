@@ -1,4 +1,3 @@
 fastapi
 uvicorn
-wtpsplit
-torch
+wtpsplit-lite
